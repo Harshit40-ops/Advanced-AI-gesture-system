@@ -1,0 +1,26 @@
+# ===== AI Gesture Control System - dependencies =====
+# Tested on Python 3.14 (Windows). Versions left fairly loose with a
+# tested minimum so pip can resolve compatible wheels on your interpreter.
+#
+# NOTE: mediapipe depends on opencv-contrib-python (a superset of
+# opencv-python). Do NOT also install opencv-python -- the two conflict.
+
+# --- Core CV / math (Phase 1) ---
+mediapipe>=0.10.35          # also installs opencv-contrib-python + numpy
+numpy>=1.26
+
+# --- System control actions (Phase 3+) ---
+pyautogui>=0.9.54
+pynput>=1.7.7
+screen-brightness-control>=0.23.0
+pycaw>=20240210 ; sys_platform == "win32"
+comtypes>=1.4.5 ; sys_platform == "win32"
+
+# --- Custom gesture ML (Phase 6) ---
+scikit-learn>=1.5
+pandas>=2.2
+joblib>=1.4
+
+# --- GUI dashboard (Phase 7) ---
+customtkinter>=5.2.2
+Pillow>=10.4

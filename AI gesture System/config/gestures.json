@@ -1,0 +1,36 @@
+{
+  "settings": {
+    "start_mode": "media",
+    "modes": ["media", "mouse", "presentation"]
+  },
+  "mappings": {
+    "global": {
+      "open_palm": { "action": "toggle_system" },
+      "rock":      { "action": "switch_mode" }
+    },
+    "any": {
+      "three": { "action": "screenshot" }
+    },
+    "media": {
+      "thumbs_up":   { "action": "volume_up" },
+      "thumbs_down": { "action": "volume_down" },
+      "fist":        { "action": "play_pause" },
+      "ok":          { "action": "mute" },
+      "swipe_right": { "action": "next_track" },
+      "swipe_left":  { "action": "previous_track" }
+    },
+    "mouse": {
+      "point":     { "action": "mouse_move" },
+      "pinch":     { "action": "left_click" },
+      "peace":     { "action": "right_click" },
+      "swipe_up":  { "action": "scroll_up" },
+      "swipe_down":{ "action": "scroll_down" }
+    },
+    "presentation": {
+      "swipe_right": { "action": "next_slide" },
+      "swipe_left":  { "action": "previous_slide" },
+      "ok":          { "action": "start_slideshow" },
+      "fist":        { "action": "end_slideshow" }
+    }
+  }
+}
